@@ -1,0 +1,7 @@
+name: AntiCreeper
+version: @version@
+main: com.masahirosaito.spigot.anticreeper.AntiCreeper
+depend: [MSCore]
+authors: [MasahiroSaito]
+description: Spigot plugin for anti creeper explosion
+website: https://github.com/MasahiroSaito/AntiCreeper
