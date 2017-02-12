@@ -15,13 +15,14 @@ class AntiCreeper : JavaPlugin(), Listener {
     }
 
     override fun onDisable() {
-        
+
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
     fun onEntityExplode(event: EntityExplodeEvent) {
         if (event.isCancelled) return
-        if (event.entityType != EntityType.CREEPER) return
+        if (event.entityType == EntityType.PRIMED_TNT) return
+        if (event.entityType == EntityType.MINECART_TNT) return
 
         event.blockList().clear()
     }
